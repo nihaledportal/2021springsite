@@ -1,33 +1,73 @@
-<html lang="en">
-  <head>
-    <title>Restaurant Reviews</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--Example Code for Bios-->
+
+<!--Challenge 1: Run this code and see what the output looks like!-->
+<!--Challenge 2: Put this code into your own homepage so that you can see Nihal's premade bio-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans"; rel="stylesheet"/>
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
-    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"; rel="stylesheet"/>
+<!--The code below is in a language called CSS (we mentioned it in class) that's used to format websites. Can you broadly understand what it's doing?-->
+<style>
 
-    <style>
+h3 {text-align: center;
+          color:#8b0000;
+      }
 
-    h1 {text-transform: uppercase}
+      h2 {text-align: center; color: #8b0000;
 
-      h2 {text-align: center; color:#8b0000}
+      }
 
+      .grid {
+        background-color:#F0F0F0;
+      }
 
-      p {font-family: Arial, Helvetica, sans-serif; color: #000000}
+      .gridspacing {
+        margin: 20px;
+        padding:20px;
+      }
 
-      p1 {font-family: Arial, Helvetica, sans-serif; color: #194775; font-size: 17px}
+      .gap {
+        background-color:#FFFFFF;
 
-      .navbarfont {font-size: 20px}
+      }
 
-      .title {margin-top: 25px; font-weight: 700}
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000000;
+      }
 
-      .margin {margin-left: 30px; margin-right: 30px}
+      p1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #194775;
+        font-size: 17px;
+      }
+
+      .navbarfont {
+        font-size: 20px;
+      }
+
+      .title {
+        margin-top: 25px;
+        font-weight: 700;
+      }
+
+      .buttondesign {
+        background-color: #194775;
+        color: #FFFFFF;
+        padding: 2px 4px;
+        text-align: center;
+        display: inline-block;
+        font-size: 10px;
+        margin: 2px 1px;
+        cursor: pointer;
+      }
 
 .container {
   position: relative;
@@ -59,9 +99,9 @@
 
 .text {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -70,7 +110,7 @@
 }
 .subtext {
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 30%;
@@ -83,27 +123,39 @@
 </head>
 <body>
 
-<nav class="navbar fixed-top navbar-light navbarfont", style="background-color: #194775;">
-      <a class="navbar-brand" href="index.html", style="color: #FF0000;">Home</a>
-            <a href="restaurants.html", style="color: #FFFFFF;">Restaurant Reviews</a>
-            <a href="seasons.html", style="color: #FFFFFF;">Seasons</a>
-            <a href="science_technology.html", style="color: #FFFFFF;">Science and Technology</a>
-            <a href="bios.html", style="color: #FFFFFF;">Student Bios</a>
-    </nav>
+    <nav class="navbar fixed-top navbar-light navbarfont", style="background-color: #194775;">
+    <a class="navbar-brand" href="index.html", style="color: #FF0000;">Home</a>
+          <a href="restaurants.html", style="color: #FFFFFF;">Restaurant Reviews</a>
+          <a href="seasons.html", style="color: #FFFFFF;">Seasons</a>
+          <a href="science_technology.html", style="color: #FFFFFF;">Science and Technology</a>
+          <a href="bios.html", style="color: #FFFFFF;">Student Bios</a>
+  </nav>
 
-    <div class="jumbotron text-center title">
-      <h1 style="color:#8b0000; font-weight: 600;">Coming soon...</h1>
-
-    </div>
-<!--
-<div class="container">
-  <img src="vishnu.jpeg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Vishnu Eskew</div>
-    <div class="subtext">I am a sophomore at Boston Latin School. This program was an opportunity for me to learn a lot about HTML!</div>
+  <div class="jumbotron text-center title">
+    <h1 style="color:#8b0000; font-weight: 600;">Student Bios</h1>
+  <p1>By Nikita Roldan-Levchenko</p1>
   </div>
-</div>
--->
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <img src="#" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Nihal</div>
+            <div class="subtext">I am a junior at Harvard studying Applied Math. I am excited about programming in HTML! </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="#" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Nihal</div>
+            <div class="subtext">I am a junior at Harvard studying Applied Math. I am excited about programming in HTML! </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 <!--Extra Challenge: Put a bio (or placeholder) for every member of this class on the homepage; play around with formatting!-->
 </body>
 </html>
