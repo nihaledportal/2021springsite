@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Individual Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="./index.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {text-align: center;}
+h2 {text-align: center;}
+* {
+  box-sizing: border-box;
+}
+
+h4 { font-family: Helvetica, sans-serif;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Challenge: Reimplement the navbar from the homepage into your new individual page -->
+<nav class="navbar fixed-top navbar-light", style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="homepage.html", style="color: #FF0000;">Home Page</a>
+        <a href="individualpage.html">Restaurant Reviews</a>
+        <a href="individualpage.html">Seasons</a>
+        <a href="individualpage.html">Science and Technology</a>
+        <a href="individualpage.html">Random</a>
+        <a href="individualpage.html">Misc</a>
+        <a href="individualpage.html">Bios</a>
+</nav>
+
+
+
+<!-- Extra Extra Challenge: Start adding new features to your individual page, starting with the top of the page -->
+<div class="jumbotron text-center">
+  <h1><u>Seasons</u></h1>
+  <h3>Welcome to the page about seasons in Massachussetts! </h3>
+  <h4><i>The seasons in Massachussetts are very distinct. Massachussetts lies in the Temperate Zone and has a humid continental climate with cold, snowy winters and hot, humid summers. There is abundant sunshine all year round and a fall foliage that is famous world-wide. Check out the different characteristics of every season below and what we recommend you to do during that time!</i></h4>
+</div>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<div class="row">
+  <div class="column" style="background-color:LightGreen;">
+    <h2>Spring</h2>
+     <img src="spring.jpg" width=320 height=200 style="width:75%;">
+    <p>Spring in Massachussetts is rather late, but short and intense (April-May). It starts with blooming cherry and magnolia trees and ends in May with the Rhododendron.</p>
+    <br>
+    <p>We recommend a stroll through the Boston Common and the Public Garden to take in all the colors, flowers and spring vibes. Another great excursion is walking along the Charles River and looking out for the offspring of the birds that live there. </p>
+  </div>
+  <div class="column" style="background-color:Gold;">
+    <h2>Summer</h2>
+    <img src="sailing.jpg" width=320 height=200 style="width:75%;">
+    <p>The Summer in Massachussetts are hot, humid and sunny. With July being the hottest month of the year, with an average temperature of 75-85 fahrenheit, the heat can get uncomfortable sometimes, but since Boston is coastal the beach is a great way to cool off!</p>
+    <br>
+    <p>You can catch a breeze at Massachussett's famous beaches, for example Cranes Beach, Wingaersheek Beach or Cape Cod! Other activities are renting a sail boat at CBI on the Charles River or enjoying some ice cream in Harvard Square.</p>
+  </div>
+  <div class="column" style="background-color:LightSalmon;">
+    <h2>Fall</h2>
+    <img src="fall.jpg" width=320 height=200 style="width:90%;">
+    <p>The Fall in Massachussetts is called "Indian Summer". It is extremely beautiful and a hiker's dream! The colors of the foliage are so intense that it almost feels magical and unreal.</p>
+    <br>
+    <p>A favorite fall activity is apple picking! There are plenty of farms full of hay rides, apple-cider donuts and of course delicious apples of all kinds. Another way to experience the full foliage beauty is to take a day trip to Western Massachussetts! Go by car or by bike and enjoy the most famous fall there is!</p>
+  </div>
+  <div class="column" style="background-color:LightBlue;">
+    <h2>Winter</h2>
+    <img src="winter.jpg" width=320 height=200 style="width:80%;">
+    <p>The Winter in Massachussetts is harsh and cold with lots of snow! It will start to get cold towards the end of November, with January being the coldest month of the year. A typical snowstorm, a "Nor'easter", can drop more than one foot of snow.</p>
+    <br>
+    <p>With the Winter being so authentic winter sports like skiing, snowboarding, sledding and snowshoeing are a must. There are small ski-resorts around Boston, but for an even better experience you can go to different states in New-England, like Maine or Vermont.</p>
+  </div>
+</div>
+
+<h4>Check out the current weather in Boston!</h4>
+<h5>We got this information from Open Weather Map using an API key, which gives us access to their weather data!</h5>
+ <div class="container">
+        <img src="" alt="" srcset="" id="weather-icon">
+        <div id="location">Unable to Fetch Weather</div>
+        <div class="desc">No Information Available.</div>
+        <div class="weather">
+            <div class="c">Error</div>
+            <div class="circle"></div>
+            <div class="f">Error</div>
+        </div>
+        <div class="info">
+            <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
+            <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+        </div>
+
+    </div>
+    <script src="Weatherapp_Api.js"></script>
+
+
+</body>
+</html>
+
